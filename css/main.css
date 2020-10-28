@@ -3,6 +3,31 @@
 
 @charset "utf-8";
 /* CSS Document */
+
+/*
+ * Droid Arabic Kufi (Arabic) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(.../fonts/DroidKufi-Regular.eot);
+  src: url(../fonts/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts//DroidKufi-Regular.woff2) format('woff2'),
+       url(../fonts/DroidKufi-Regular.woff) format('woff'),
+       url(../fonts/droidarabickufi/v6/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/droidarabickufi/v6/DroidKufi-Bold.eot);
+  src: url(../fonts/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/DroidKufi-Bold.woff2) format('woff2'),
+       url(../fonts/DroidKufi-Bold.woff) format('woff'),
+       url(../fonts/DroidKufi-Bold.ttf) format('truetype');
+}
+
 @font-face {
   font-family: "DroidKufiBold";
   font-style: normal;
@@ -21,6 +46,7 @@
   -webkit-font-smoothing: antialiased !important;
 }
 
+
 /*************************
 *******main style******
 **************************/
@@ -36,13 +62,11 @@ body {
   overflow-x: hidden !important;
 }
 a {
-  -webkit-transition: color 300ms, background-color 300ms;
-  -moz-transition: color 300ms, background-color 300ms;
-  -o-transition:  color 300ms, background-color 300ms;
-  transition:  color 300ms, background-color 300ms;
+  color: #000000;
 }
 a:hover, a:focus {
-  text-decoration: none;
+  color: #f20000;
+  text-decoration: none
 }
 hr {
   border-top: 1px solid #e5e5e5;
@@ -522,16 +546,17 @@ ul{
   height: auto;
 }
 .slideshow_section .section_one{
-  height: 394px;
+  height: 401px;
   background-color: #eeeeee;
   margin-bottom: 15px !important;
 }
 .slideshow_section .section_one img{
-  height: 394px;
+  height: 401px;
   width: 100%;
 }
 .slideshow_section .section_one .nav_tab{
   background-color: #67ba4d;
+  height: 400px;
 }
 /* tabs-left */
 .tabs-left, .tabs-right {
@@ -588,7 +613,7 @@ ul{
 .sideways>li {
   height: 20px;
   width: 130px;
-  margin-bottom: 112px;
+  margin-bottom: 116px;
 }
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
@@ -635,7 +660,7 @@ ul{
 
 .slideshow_section .section_two{
   background-color: #f3f3f3;
-  height: 394px;
+  height: 401px;
   margin: 0 auto 15px auto;
   text-align: center;
   padding: 55px 15spx 0 15px;
@@ -1022,7 +1047,7 @@ ol.type > li a.active{
   margin: 0 auto;
 }
 .manalsociety_section .section_one , .manalsociety_section .section_two  , .manalsociety_section .section_three{
-  margin: 0 0 23px 0;
+  margin: 0 0 5px 0;
 }
 .manalsociety_section .one{
   height: auto !important;
@@ -1052,7 +1077,7 @@ ol.type > li a.active{
 }
 .manalsociety_section .three .img-responsive{
   width: 100%;
-  height: 538px !important;
+  height:auto !important;
   margin: 0;
   padding: 0;
   overflow: hidden!important;
@@ -1150,7 +1175,7 @@ ol.type > li a.active{
 }
 
 .manalsociety_section .pic-caption {
-    cursor: default;
+cursor: default;
     position: absolute;
     width: 100%;
     height: 120px;
@@ -1358,7 +1383,7 @@ ol.type > li a.active{
   overflow: hidden;
 }
 .children_section .morelink a {
-  margin: -20px auto 0;
+  margin: -10px auto 0;
 }
 
 .children_section .section_two{
@@ -2387,14 +2412,14 @@ width: 100% !important;
 }
 .innercontent_section .left_section .box .content{
   display: block;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 0;
   text-align: center !important;
 }
 .innercontent_section .left_section .box .content .img-responsive{
   max-width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -2643,7 +2668,7 @@ width: 100% !important;
   text-align: center;
 }
 .innerlifestyle .section-title h1{
-  background:url(../images/children_title.png) no-repeat right top;
+  background:url(../images/lifestyle_title.png) no-repeat right top;
   font-family: 'Droid Arabic Kufi', 'Tahoma'; 
   color: #000 !important;
   font-size: 24px;
@@ -2944,7 +2969,7 @@ width: 100% !important;
   text-align: center;
 }
 .innerhealthy .section-title h1{
-  background:url(../images/children_title.png) no-repeat right top;
+  background:url(../images/health_title.png) no-repeat right top;
   font-family: 'Droid Arabic Kufi', 'Tahoma'; 
   color: #000 !important;
   font-size: 24px;
@@ -3217,7 +3242,7 @@ width: 100% !important;
   text-align: center;
 }
 .innermanalsociety .section-title h1{
-  background:url(../images/children_title.png) no-repeat right top;
+  background:url(../images/society_title.png) no-repeat right top;
   font-family: 'Droid Arabic Kufi', 'Tahoma'; 
   color: #000 !important;
   font-size: 24px;
@@ -3237,7 +3262,7 @@ width: 100% !important;
   position: relative;
   background: #2fadfa;
   width: 100%;
-  height: 315px;
+  height: 390px;
   border: 1px solid #c5c5c5;
   overflow: hidden;
 }
@@ -3348,15 +3373,25 @@ width: 100% !important;
 .right_section .breadcrumb li a:active{color: #000 !important;text-decoration: none;}
 
 .innerarticlesdetails .contentbg{
-  background-color: #ffffff;padding: 20px 15px 15px;display: inline-block;
+  background-color: #ffffff;padding: 20px 15px 15px;display: inline-block;min-height:1428px;
 }
 
 .innerarticlesdetails .bimg{
-  height: 380px !important;border: 1px solid #c5c5c5;overflow: hidden;padding: 0;margin: 20px 0 30px;
+  height: 380px !important;border: 1px solid #c5c5c5;overflow: hidden;padding: 0;margin: 15px 0 20px;
 }
 .innerarticlesdetails .bimg .img-responsive{
   width: 100% !important;height: 380px !important;
 }
+.innerarticlesdetails ul.ordertxt{
+  margin: 5px 5px 0 0 !important;
+  height: auto;
+  display: inline-block;
+}
+.innerarticlesdetails ul.ordertxt li{
+  margin: 0 0 5px 0 !important;
+  text-align: right !important;
+}
+
 
 .innermanalkitchen .bsharingtxt{
   background-color: #fcfbfb;border-top: 1px #bbbaba solid;border-bottom: 1px #bbbaba solid;
@@ -3540,14 +3575,13 @@ width: 100% !important;
 /*************************
 *******innermanalkitchen section******
 **************************/
-
 .innermanalkitchen ol.type > li a {background: none repeat scroll 0 0 #e8e8e8;border: 1px solid #ececec;}
 .innermanalkitchen ol.type > li a:hover,
 .innermanalkitchen ol.type > li a.active{background: #67ba4d;border: 1px solid #67ba4d;}
 
 
 .innermanalkitchen .separetorbg {width: 100%;}
-.innermanalkitchen .separetor {background: #ffffff;width: 100%;height: 4px;margin: 10px 0 30px 0}
+.innermanalkitchen .separetor {background: #ffffff;width: 100%;height: 4px;margin: 30px 0 30px 0}
 
 /************innervideos**************/
 .innervideos{
@@ -3659,14 +3693,14 @@ width: 100% !important;
 }
 .innervideos .svideo .item{
   width: 100%;
-  height: 97px;
-  margin-bottom: 14px !important;
+  height: 82px;
+  margin-bottom: 34px !important;
   position: relative;
   overflow: hidden;
 }
 .innervideos .svideo .item .img-responsive{
   width: 100%;
-  height: 97px;
+  height: 82px;
   position: relative;
 }
 .innervideos .svideo .item .arrow {
@@ -3676,7 +3710,7 @@ width: 100% !important;
   margin: 0 auto;
   color: #e20000;
   left: 41%;
-  top: 26px;
+  top: 16px;
   background: rgba(255, 255, 255, 0.60);
   transition: all 0.5s;
   z-index: 5;
@@ -3705,7 +3739,7 @@ width: 100% !important;
   transition: all 0.5s;
   z-index: 5;
   right: 0px;
-  top: 72px;
+  top: 57px;
 }
 
 /********* innerkarticles ********/
@@ -4116,6 +4150,31 @@ width: 100% !important;
   border-bottom-color: transparent;
 }
 
+/* -----recipe_adds----- */
+.innermanalkitchen .recipe_adds{padding:0 15px; margin-top: 30px;height: auto}
+.innermanalkitchen .recipe_adds .content{
+    color: #000;font-size: 14px;font-weight: bold;padding: 0 !important;margin: 0px auto;
+  text-align: center;height: auto;
+}
+.innermanalkitchen .recipe_adds .content .sharing {
+  margin: 11px 0 0 0px;
+}
+.innermanalkitchen .recipe_adds .content .sharing .text {float: right;margin-top: 4px }
+.innermanalkitchen .recipe_adds .content .sharing .icons {float: right; margin-top: -3px;margin-right: 5px;}
+
+.innermanalkitchen .recipe_adds .content .sharing .fa{
+  font-weight: normal;
+  font-size: 22px;
+  margin: 0 0 0 7px;
+  display: inline-block !important;
+}
+.innermanalkitchen .recipe_adds .content .sharing a.linktxt , .innermanalkitchen .recipe_adds .content .sharing a.linktxt:visited{
+  color: :#000000 !important;
+}
+.innermanalkitchen .recipe_adds .content .sharing a.linktxt:hover{
+  color: :#f20000;
+}
+
 /* -----iconsbox----- */
 .innermanalkitchen .iconsbox{
   height: 42px;
@@ -4125,17 +4184,18 @@ width: 100% !important;
   background-color: #70bf58;
   height: 42px;
   overflow: hidden;
-  padding : 0 10px;
+  padding : 0 5px;
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
   border-left: 2px #ffffff solid !important;
+  display: block;
 }
 .innermanalkitchen .iconsbox .lastitem {
   background-color: #70bf58;
   height: 42px;
   overflow: hidden;
-  padding : 0 20px;
+  padding : 0 5px;
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
@@ -4160,7 +4220,7 @@ width: 100% !important;
 .innermanalkitchen .iconsbox h2{
   font-family: 'Droid Arabic Kufi', 'Tahoma'; 
   color: #ffffff !important;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
   margin: 0;
   padding: 0px;
@@ -4173,7 +4233,8 @@ width: 100% !important;
 .innermanalkitchen .iconsbox h2 .fa{
   font-weight: normal;
   font-size: 19px;
-  margin: 0;
+  margin: 0 0 0 3px;
+  display: inline-block !important;
 }
 
 /* -----recipeingredients----- */
@@ -4673,7 +4734,6 @@ width: 100% !important;
   color: #000000 !important;
 }
 
-
 .innermanalkitchen .ask_comment .commentbg {
   height: auto;padding: 0px 15px !important;margin: 15px 0 0 0; 
 }
@@ -4686,9 +4746,47 @@ width: 100% !important;
 }
 
 
+/*************************
+*******innerabout section******
+**************************/
+/******************articles details ( innerabout )**********************/
+.innerabout .innerarticlesdetails h1{
+  font-family: 'Droid Arabic Kufi', 'Tahoma';color: #ff9600 !important;font-size: 19px;font-weight: bold;text-align: right;
+  line-height: 38px;height: 38px;overflow: hidden;padding: 0px;margin: 0 0 10px 0;
+}
+.innerabout .innerarticlesdetails p{
+    color: #171717;font-size: 13px;font-weight: normal;line-height: 25px;padding: 0px 20px 0 5px;margin: 26px 0 0 0;
+    border-right: 4px solid #ff9600;text-align: justify;
+}
+.innerabout .innerarticlesdetails h2{
+  font-family: 'Droid Arabic Kufi', 'Tahoma';color: #ff9600 !important;font-size: 19px;font-weight: bold;text-align: right;
+  line-height: 38px;height: 38px;overflow: hidden;padding: 0px;margin: 30px 0 0px 0;
+}
 
+/*************************
+*******innercontact section******
+**************************/
+/******************articles details ( innercontact )**********************/
+.innercontact .innerarticlesdetails h1{
+  font-family: 'Droid Arabic Kufi', 'Tahoma';color: #c47d01 !important;font-size: 19px;font-weight: bold;text-align: right;
+  line-height: 38px;height: 38px;overflow: hidden;padding: 0px;margin: 0 0 10px 0;
+}
+.innercontact .innerarticlesdetails p{
+    color: #171717;font-size: 13px;font-weight: normal;line-height: 25px;padding: 0px 20px 0 5px;margin: 26px 0 0 0;
+    border-right: 4px solid #c47d01;text-align: justify;
+}
+.innercontact .innerarticlesdetails h2{
+  font-family: 'Droid Arabic Kufi', 'Tahoma';color: #c47d01 !important;font-size: 19px;font-weight: bold;text-align: right;
+  line-height: 38px;height: 38px;overflow: hidden;padding: 0px;margin: 20px 0 10px 0;
+}
 
+.innercontact .innerarticlesdetails table td{
+  height: 25px;line-height: 25px;font-size: 13px;
+}
 
-
-
-
+/*************************
+*******ramadan2017 section******
+**************************/
+.innermanalkitchen .fotor_recipes , .innermanalkitchen .sohor_recipes , .innermanalkitchen .desserts_recipes {
+  height: auto !important;margin: 0px 0 0px 0;display: inline-block !important; 
+}

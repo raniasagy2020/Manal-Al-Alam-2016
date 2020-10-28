@@ -28,7 +28,7 @@
 	.menu ul ul {right: 0px;text-indent: 30px;}
 
 	/*******slideshow section******/
-	.slideshow_section .section_two{height: auto;text-align: center;padding-top: 20px;}
+	.slideshow_section .section_two{height: auto;text-align: center;padding-top: 20px;padding-bottom: 20px}
 
 	/*******lifestyle section******/
 	.lifestyle_section .ih-item.square {height: 310px;}
@@ -75,11 +75,17 @@
 	.innermanalsociety .img .img-responsive {height: 600px;}
 
 	/*******innerarticlesdetails section******/
-	.innerarticlesdetails .bimg{height: 220px !important;	}
-	.innerarticlesdetails .bimg .img-responsive{width: 100% !important;height: 220px !important;}
+	.innerarticlesdetails .bimg{height: 180px !important;	}
+	.innerarticlesdetails .bimg .img-responsive{width: 100% !important;height: 180px !important;}
 
 	.innerarticlesdetails .articlediv{width: 100%;height: 222px !important}
 	.innerarticlesdetails .articlediv .img-responsive{width: 90% !important;height: 220px !important;}
+
+	/*******ةmanal kitchen recipes details section******/
+	.recipedetails .recipetab .nav-pills > li > a {font-size: 12px;line-height: 25px;}
+	
+	.recipedetails .recipetab .tab-content {height: auto;}
+	.recipedetails .recipetab .tab-content .img-responsive {height: 210px;}	
 
 }
 
@@ -113,7 +119,7 @@
 	.menu ul ul {right: 0px;text-indent: 30px;}
 
 	/*******slideshow section******/
-	.slideshow_section .section_two{height: auto;text-align: center;padding-top: 20px;}
+	.slideshow_section .section_two{height: auto;text-align: center;padding-top: 20px;padding-bottom: 20px}
 
 	/*******lifestyle section******/
 	.lifestyle_section .ih-item.square {height: 420px;}
@@ -166,6 +172,12 @@
 	.innerarticlesdetails .articlediv{width: 100%;height: 262px !important}
 	.innerarticlesdetails .articlediv .img-responsive{width: 80% !important;height: 260px !important;}
 
+	/*******ةmanal kitchen recipes details section******/
+	.recipedetails .recipetab .nav-pills > li > a {font-size: 15px;line-height: 25px;}
+
+	.recipedetails .recipetab .tab-content {height: auto;}
+	.recipedetails .recipetab .tab-content .img-responsive {height: 300px;}
+
 }
 
 
@@ -203,7 +215,7 @@
 	.menu ul ul {right: 172px;text-indent: 0;}
 
 	/*******slideshow section******/
-	.slideshow_section .section_two{height: auto;text-align: center;padding-top: 20px;}
+	.slideshow_section .section_two{height: auto;text-align: center;padding-top: 20px;padding-bottom: 20px}
 
 	/*******lifestyle section******/
 	.lifestyle_section .ih-item.square {height: 240px;}
@@ -256,6 +268,12 @@
 	.innerarticlesdetails .articlediv{width: 100%;height: 322px !important}
 	.innerarticlesdetails .articlediv .img-responsive{width: 80% !important;height: 320px !important;}
 
+	/*******ةmanal kitchen recipes details section******/
+	.recipedetails .recipetab .nav-pills > li > a {font-size: 15px;line-height: 25px;}
+	
+	.recipedetails .recipetab .tab-content {height: auto;}
+	.recipedetails .recipetab .tab-content .img-responsive {height: 390px;}
+
 }
 
 
@@ -293,7 +311,7 @@
 	.menu ul ul {right: 172px;text-indent: 0;}
 
 	/*******slideshow section******/
-	.slideshow_section .section_two{height: auto;text-align: center;padding-top: 20px;}
+	.slideshow_section .section_two{height: auto;text-align: center;padding-top: 20px;padding-bottom: 20px}
 
 	/*******lifestyle section******/
 	.lifestyle_section .ih-item.square {height: 280px;}
@@ -349,6 +367,12 @@
 	.innerarticlesdetails .articlediv{width: 100%;height: 402px !important}
 	.innerarticlesdetails .articlediv .img-responsive{width: 80% !important;height: 400px !important;}
 
+	/*******ةmanal kitchen recipes details section******/
+	.recipedetails .recipetab .nav-pills > li > a {font-size: 15px;line-height: 25px;}
+	
+	.recipedetails .recipetab .tab-content {height: auto;}
+	.recipedetails .recipetab .tab-content .img-responsive {height: 480px;}
+
 }
 
 /* ############ min-width: 1200px############ */
@@ -385,7 +409,7 @@
 	.menu ul ul {right: 172px;text-indent: 0;overflow-x: hidden;}
 
 	/*******slideshow section******/
-	.slideshow_section .section_two{height: 394px;text-align: center;padding-top: 55px;}
+	.slideshow_section .section_two{height: 401px;text-align: center;padding-top: 55px;}
 
 	/*******lifestyle section******/
 	.lifestyle_section .ih-item.square {height: 340px;}
@@ -444,5 +468,11 @@
 
 	.innerarticlesdetails .articlediv{width: 100%;height: 342px !important}
 	.innerarticlesdetails .articlediv .img-responsive{width: 80% !important;height: 340px !important;}
+
+	/*******ةmanal kitchen recipes details section******/
+	.recipedetails .recipetab .nav-pills > li > a {font-size: 15px;line-height: 25px;}
+
+	.recipedetails .recipetab .tab-content {height: auto;}
+	.recipedetails .recipetab .tab-content .img-responsive {height: 428px;}
 
 }

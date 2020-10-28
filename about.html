@@ -166,7 +166,7 @@
                         </ul>
                     </li>
                     <!-- home management -->
-                    <li><a class="icon8 hvr-pop" href="home_management.html">إدارة المنزل</a></li>
+                    <li><a class="icon8 hvr-pop" href="contact.html">إتصل بنا</a></li>
                 </ul>  
             </div>
         </div>
@@ -181,7 +181,7 @@
         <!-- row -->
         <div class="row">
             <div class="col-xs-12">
-                <img class="img-responsive" src="images/lifestyle_header.jpg" alt="" title="">
+                <img class="img-responsive" src="images/about_header.jpg" alt="" title="">
             </div>
         </div>
         <!---->
@@ -207,109 +207,68 @@
         <!-- row -->
         <div class="row">
             <!-- right_section  -->
-            <div class="right_section innerlifestyle col-lg-8 col-xs-12">
-                <!-- breadcrumb -->
-                <div class="breadcrumb_bg col-xs-12">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-                        <li class="breadcrumb-item active">لايف ستايل</li>
-                    </ol>                    
-                </div>
-                <!-- /breadcrumb -->
-                <!-- section-title -->
-                <div class="section-title col-xs-12 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="100ms">
-                   <h1>لايف <span>ستايل</span></h1>
-                   <div class="clearfix"></div>
-                </div>
-                <!-- 1 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href="lifestyle_details.html"><img src="images/lifestyle/pic1.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="lifestyle_details.html">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 2 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic5.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 3 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic12.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 4 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic3.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 5 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic6.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 6 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic11.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 7 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic2.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 8 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic7.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 9 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic9.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 10 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic4.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 11 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic10.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-                <!-- 12 -->
-                <div class="box col-sm-4 col-xs-12">
-                    <div class="img"><a href=""><img src="images/lifestyle/pic8.jpg" class="img-responsive" alt="" title=""></a></div>
-                    <h2><a href="">عنوان المقال يوجد هنا</a></h2>
-                </div>
-
-                <!-- paging -->
-                <div class="clearfix"></div>
-                <div class="text-center">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link{{ ($object->currentPage() == 1) ? ' disabled' : '' }}" href="{{$base_url}}/{{($object->currentPage()-1)}}{{count(Request::except('page'))?'/?'.http_build_query(Request::except('page')):''}}" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </li>
-
-                            @for ($i = $object->currentPage()-2; $i <= $object->currentPage()+2; $i++)
-                                @if( $i > 0 && $i <= $object->lastPage() )
-                                <li class="page-item">
-                                    <a class="page-link{{ ($object->currentPage() == $i) ? ' active' : '' }}" href="{{$base_url.'/'.$i}}{{count(Request::except('page'))?'/?'.http_build_query(Request::except('page')):''}}">{{ $i }}</a>
-                                </li>
-                                @endif
-                            @endfor
-
-                            <li class="page-item">
-                                <a class="page-link{{ ($object->currentPage() == $object->lastPage()) ? ' disabled' : '' }}" href="{{$base_url.'/'.($object->currentPage()+1)}}{{count(Request::except('page'))?'/?'.http_build_query(Request::except('page')):''}}" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>                    
+            <div class="right_section innerabout col-lg-8 col-xs-12">
+                <div class="innerarticlesdetails">
+                    <!-- breadcrumb -->
+                    <div class="breadcrumb_bg col-xs-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                            <li class="breadcrumb-item active">عن منال العالم</li>
+                        </ol>                    
+                    </div>
+                    <!-- /breadcrumb -->
+                    <!-- contentbg -->
+                    <div class="col-xs-12">
+                        <div class="contentbg">
+                            <!-- title -->
+                            <h1 class="col-xs-12">قصتها</h1>
+                            <!-- bimg -->
+                            <div class="col-xs-12 bimg"><img src="images/manal_img.jpg" class="img-responsive" alt="" title=""></div>
+                            <!-- txt -->
+                            <p class="col-xs-12">
+                                منال العالم (ليسانس أداب جامعة عين شمس - علم نفس القاهرة سنة 1981) إلى كل محبيّ مطبخ منال العالم وإلى كل من يرغب في الحصول على الوصفة الصحيحة والطريقة السهلة والأكلات اللذيذة والمظهر المشهي لجيمع أنواع الأطباق المالحة والحلوة، العربية والغربية، نقدم لكم موقع منال العالم مع تمنياتنا للجميع بالإستفادة والإفادة  
+                            </p>
+                            <!-- txt -->
+                            <h2 class="col-xs-12">بيانات الخبرة</strong></h2>
+                            <ul class="ordertxt col-xs-12">
+                                <li>قامت بتأسيس شركة – Food lines Advertising Company - للدعاية والأعلان بدولة الكويت 2000</li>
+                                <li>أقامت دورات متخصصة في فن الطهي لسيدات المجتمع منذ عام 1995 حتى 2007</li>
+                                <li>أقامت الدورات من 1995 حتى 2002 في أكبر الفنادق في دولة الكويت</li>
+                                <li>أقامت الدورات في مقر شركتها منذ 2002 حتى 2007</li>
+                                <li>أقامت - نادى منال – الذى يضم في عضويته 6000 سيدة من الكويت والدول العربية</li>
+                                <li>أعدت ونظمت عدد 7 مهرجانات في فن الطهي تشمل عروض ومسابقات منذ عام 1993 وحتى الأن</li>
+                                <li>قدمت عروض للطهي في المدارس الحكومية و لجمعيات النفع العام النسائية والدينية</li>
+                                <li>اقامت دورات متخصصة للشركات ( باناسونيك – بنك الكويت الوطني ...... )</li>
+                                <li>أقامت مهرجانات للشركات ذات العلاقة ( نستلة – أمريكانا ...... )</li>
+                                <li>قدمت وأعدت برنامج لتليفزيون الكويت – تسلم إيدك - 2002</li>                                    
+                                <li>قدمت وأعدت برنلمج لتليفزيون MBC - مطبخ منال – 2003</li>
+                                <li>قدمت وأعدت برنلمج لتليفزيون MBC - رمضان كريم وخفيف – 2004</li>
+                                <li>قدمت وأعدت برنامج لتليفزيون الراى – سفرة منال – 2005</li>
+                                <li>قدمت وأعدت برنامج لتليفزيون الرسالة – أسرار منال – 2006</li>
+                                <li>شاركت في لجنة التحكيم الخاصة ببرنامج – النجم الشيف – لقناة MBC الذي عرض خلال شهر مايو 2007</li>
+                                <li>قدمت العديد من الدورات للفتيات من 8-15 سنة في فن الطهي</li>
+                                <li>قامت بإعداد الأطباق وتحضيرها وتصويرها للشركات</li>
+                                <li>قامت بإعداد التقارير والأستبيانات عن منتجات الشركات الغذائية</li>
+                                <li>على أتصال دائم بسيدات المجتمع الكويتي والعربي في الأنشطة المختلفة</li>
+                                <li>الأصدارات : " مجلة المطبخ " كل ثلاث شهور توزع مجانا على السيدات العضوات</li>
+                                <li>لها إصدارات عديدة : وصفات في بطاقات – كتاب 100 وصفة بسكويت – مجلة وصفات مش معقولة – وصفات شهية .</li>
+                                <li>صدر لها أول كتاب يحتوى على وصفات مصورة في عام 2007 بحمد الله</li>
+                                <li>أعدت كتاب – الطهي بالميكروويف - بناسونيك</li>
+                                <li>أعدت كتاب – أرز المهيدب</li>
+                                <li>أنتجت إصدارات متنوعة ما بين صور أطباق وكتيبات و وصفات مصورة و برامج طهي على – CD - DVD - شرائط Video ونشرات إخبارية</li>
+                                <li>الإسهام في أنتاج أصناف جديدة وتحسين منتجات موجودة في السوق لدي شركات كبري للمنتجات الغذائية</li>
+                            </ul>
+                            <!-- txt -->
+                            <p class="col-xs-12">
+                                من 1983 حتى الأنشاركت في الإعلانات على منتجات غذائية مثل – الحملة الإعلانية أزر إنديا جيت – عبارة عن دعايات خارجية على شكل بوسترات في الطرقات وعلى الباصات وفي الجرائد المشاركة في لجان التحكيم لمسابقات الطهي في كثير من الأماكن المشاركة في كثير من المهرجانات منذ عام 1983 المساهمة في اللقاءات والندوات والأجتماعات والمؤتمرات ذات العلاقة على قدر كبير من الدراية والمعرفة بمعظم ما هو جديد في عالم المطبخ والأسرة من خلال الأطلاع الدائم على كل ما يتعلق بذلك في الصحف والمجلات المتخصصة والكتب والتلفاز والأنترنت نشر مقالات ذات العلاقة في كل من :– جريدة الوطن - جريدة القبس – مجلة مائدتي - مجلة حبيبتي يا كويت - مجلة لنا "مطبخ منال" - "اسرار منال" -"منال العالم" - " الشيف منال العالم" متواجدة على الأنترنت 
+                            </p>
+                            <!-- txt -->
+                            <p class="col-xs-12">
+                                لك نبذة مختصرة عن منال العالم تبين مدى الخبرة التي تتمتع بها في عالم الطهي وإعداد الوصفات الصحيحة على مدى ثلاثة عقود أمضتها مع الوصفات تجربة وتذوقا وتعليما لتقدم الوصفة الصحيحة المضمونة تغذية ومذاقا ومظهرا.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /contentbg -->                    
                 </div>
             </div>
             <!-- left_section -->
@@ -375,7 +334,7 @@
                     <!-- facebook plugin -->
                     <div class="box col-xs-12">
                         <div class="content">
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FManalAlalem%2F&tabs=timeline&width=309px&height=215px&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="310px" height="206px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                            <a href=""><img class="img-responsive" src="images/ads/ad9.png" alt="" title="" /></a>
                         </div>                   
                     </div>
                 </div>
@@ -432,6 +391,10 @@
 <script src="js/modernizr.min.js"></script>
 <!-- wow -->
 <script src="js/wow.min.js"></script>
+<!---sharethis-->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" id="st_insights_js" src="http://w.sharethis.com/button/buttons.js?publisher=a45e16a7-82c0-43b1-909d-2000ac27c7c1"></script>
+<script type="text/javascript">stLight.options({publisher: "a45e16a7-82c0-43b1-909d-2000ac27c7c1", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 </body>
 </html>
