@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
 
 @charset "utf-8";
@@ -10,28 +11,28 @@
   font-family: 'Droid Arabic Kufi';
   font-style: normal;
   font-weight: 400;
-  src: url(.../fonts/DroidKufi-Regular.eot);
-  src: url(../fonts/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'),
-       url(../fonts//DroidKufi-Regular.woff2) format('woff2'),
-       url(../fonts/DroidKufi-Regular.woff) format('woff'),
-       url(../fonts/droidarabickufi/v6/DroidKufi-Regular.ttf) format('truetype');
+  src: url(fonts/DroidKufi-Regular.eot);
+  src: url(fonts/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'),
+       url(fonts//DroidKufi-Regular.woff2) format('woff2'),
+       url(fonts/DroidKufi-Regular.woff) format('woff'),
+       url(fonts/droidarabickufi/v6/DroidKufi-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Droid Arabic Kufi';
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/droidarabickufi/v6/DroidKufi-Bold.eot);
-  src: url(../fonts/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/DroidKufi-Bold.woff2) format('woff2'),
-       url(../fonts/DroidKufi-Bold.woff) format('woff'),
-       url(../fonts/DroidKufi-Bold.ttf) format('truetype');
+  src: url(fonts/droidarabickufi/v6/DroidKufi-Bold.eot);
+  src: url(fonts/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'),
+       url(fonts/DroidKufi-Bold.woff2) format('woff2'),
+       url(fonts/DroidKufi-Bold.woff) format('woff'),
+       url(fonts/DroidKufi-Bold.ttf) format('truetype');
 }
 
 @font-face {
   font-family: "DroidKufiBold";
   font-style: normal;
   font-weight: normal;
-  src:url(../fonts/DroidKufiBold.woff)
+  src:url(fonts/DroidKufiBold.woff)
   -webkit-text-stroke:0px!important;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -40,7 +41,7 @@
   font-family: "DroidKufiBold";
   font-style: normal;
   font-weight: normal;
-  src:url(../fonts/DroidKufiBold.eot)
+  src:url(fonts/DroidKufiBold.eot)
   -webkit-text-stroke:0px!important;
   -webkit-font-smoothing: antialiased !important;
 }
